@@ -8,7 +8,7 @@ import Foundation
 /// - verbose: Log type verbose
 /// - warning: Log type warning
 /// - severe: Log type severe
-enum LogEvent: String {
+public enum LogEvent: String {
     case e = "[‼️]" // error
     case i = "[ℹ️]" // info
     case d = "[💬]" // debug
@@ -61,7 +61,7 @@ public class Log {
     ///   - line: Line number in file from where the logging is done
     ///   - column: Column number of the log message
     ///   - funcName: Name of the function from where the logging is done
-    class func log( _ object: Any, event: LogEvent, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
+    public class func log( _ object: Any, event: LogEvent, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
         if isLoggingEnabled {
             print("\(Date().toString()) \(event.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(column) \(funcName) -> \(object)")
         }
