@@ -1,3 +1,3 @@
 # SwiftLogger
 
-A description of this package.
+A basic logging library to provide a more contextual debug log message  
