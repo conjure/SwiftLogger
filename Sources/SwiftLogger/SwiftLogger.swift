@@ -9,12 +9,12 @@ import Foundation
 /// - warning: Log type warning
 /// - severe: Log type severe
 public enum LogEvent: String {
-    case e = "[‼️]" // error
-    case i = "[ℹ️]" // info
-    case d = "[💬]" // debug
-    case v = "[🔬]" // verbose
-    case w = "[⚠️]" // warning
-    case s = "[🔥]" // severe
+    case error = "[‼️]" // error
+    case info = "[ℹ️]" // info
+    case debug = "[💬]" // debug
+    case verbose = "[🔬]" // verbose
+    case warning = "[⚠️]" // warning
+    case severe = "[🔥]" // severe
 }
 
 /// Wrapping Swift.print() within DEBUG flag
