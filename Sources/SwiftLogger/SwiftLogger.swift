@@ -49,7 +49,7 @@ public class Log {
 #endif
     }
 
-    // MARK: - Loging methods
+    // MARK: - Logging methods
 
 
     /// Logs error messages on console with prefix
